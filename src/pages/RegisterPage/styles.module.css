@@ -1,0 +1,136 @@
+.MainContainer{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/connect1.jpg');
+    background-size: cover;
+    }
+    .InputContainer{
+        position: relative;
+        top: 80px; 
+        left: auto;
+       
+    }
+    .MainContainer h1{
+       margin: 0 auto ;
+       font-size: 3rem;
+       font-weight: 800;
+       color: rgba(255, 255, 255, 0.425);
+        }
+    
+    .MainContainer input{
+        width: 60%;
+        padding: 7px;
+        margin: 20px auto 0 auto;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 5px 5px rgb(63, 63, 63);
+        font-size: 1.2rem;
+        outline: none;
+         }
+    .Form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+          }
+    .Button{
+        padding: 7px 60px;
+        margin: 20px auto 0 auto;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 5px 5px rgb(36, 36, 36);
+        background-color: #3d67b2;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        outline: none;
+        text-transform: uppercase;
+    
+    }
+    .Button:hover{
+        background-color: #1d3b6e;
+    }
+    .ErrorContainer{
+        height: fit-content;
+        color: rgb(219, 2, 2);
+        font-size: 1rem;
+        margin: 0.3rem auto 0;
+        font-weight: 700;
+        width: 65%;
+        background-color: rgba(175, 174, 174, 0.534);
+        border-radius: 10px;
+    }
+    .ErrorAuthContainer{
+        height: 15px;
+        color: rgb(219, 2, 2);
+        font-size: 1rem;
+        margin: 0.3rem auto 0;
+        font-weight: 700;
+        width: 65%;
+    }
+  .LinkContainer{
+      padding: 20px 0 5px;
+      /* color: whitesmoke; */
+      font-style: italic;
+  }
+   .Link{
+        color: whitesmoke;
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .Link:hover{
+        color: rgb(195, 195, 195);
+      }
+    @media screen and (min-width: 360px ){
+            .InputContainer{
+                top: 135px; left: auto;
+            }
+            .MainContainer h1{
+               font-size: 3.5rem;
+            }
+            .Button{
+                font-size: 1.2rem;
+           }
+    }
+    @media screen and (min-width: 414px ){
+        .InputContainer{
+            top: 200px; left: auto;
+        }
+        .MainContainer h1{
+           font-size: 4rem;
+        }
+}
+
+    
+    @media screen and (min-width: 500px ){
+        .MainContainer{
+            margin: 50px auto;
+            width: 500px;
+            height: 850px;
+            border-radius: 10px;
+        }
+        .MainContainer h1{
+            margin: 0 auto 25px;
+        }
+        .InputContainer{
+            position: relative;
+            top: 250px; left: auto;
+        }
+        .MainContainer input{
+            width: 60%;
+            padding: 10px;
+            margin: 30px auto 0 auto;
+            font-size: 1.2rem;
+            outline: none;
+             }
+             .ErrorContainer{
+               
+                font-size: 1rem;
+                margin: 0.3rem auto 0;
+                font-weight: 700;
+                width: 65%;
+            }
+    }

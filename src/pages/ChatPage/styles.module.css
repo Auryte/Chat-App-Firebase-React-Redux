@@ -1,0 +1,383 @@
+.ChatPageContainerMain{
+    width: 100vw;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 5px grey;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.ChatPageHeader{
+    box-shadow: 2px 0 3px grey, -3px 0px 3px grey ;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+    background-color: #3d67b2;
+    color: whitesmoke;
+    z-index: 1;
+}
+.ChatPageHeaderGreeting{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.ChatPageHeaderLogout{
+    font-size: 1rem;
+    font-weight: 500;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.ChatPageHeaderLogout:hover{
+    color: rgb(184, 184, 184);
+}
+/* Users section */
+.ChatContainerSection{
+    
+    width: 100%;
+    height: calc(100% - 80px) ;
+}
+.UsersContainerSection{
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    padding: 0 10px ;
+}
+.UsersContainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    border-right: none;
+    height: 100%;
+    overflow-x: scroll;
+    
+}
+.UserInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    padding-bottom: 10px;
+}
+.UserDisplayAvatar{
+    width: 40px;
+    height: 40px;
+    margin: 10px 30px;
+    border-radius: 50%;
+    background-color: rgb(136, 135, 135);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+.UserDisplayName{
+    display: flex;
+    /* flex: 1; */
+    justify-content: space-between;
+    margin: 0, 10px;
+    height: fit-content;
+    font-size: 0.8rem;
+}
+
+     .ChatContainer{
+         width: 100%;
+         height: 85%;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+         
+     }
+    
+     .ChatMessagesAll{
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        height: 100%;
+        align-items: stretch;
+        
+    }
+    
+     .ChatHeader{
+         background-color: lightgrey;
+         padding: 0 10px;
+         font-weight: 500;
+     }
+     .ChatHeader p{
+       padding: 5px 0;
+       margin: 0;
+    }
+    .ChatMessagesSection{
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: flex-end;
+    }
+    .ChatMessageLeft{
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+   }
+     .ChatMessageRight{
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+     }
+     .ChatMessageBlue{
+        background: #7196d6;
+        color: whitesmoke;
+        padding: 5px 20px;
+        border-radius: 30px;
+        margin: 5px; 
+        max-width: 100%; 
+     }
+    .ChatMessageGrey{
+        background: lightgrey;
+        color: black;
+        padding: 5px 20px;
+        border-radius: 30px;
+        margin: 5px;     
+        max-width: 100%; 
+    }
+  
+    .singleMessage{
+        display: flex;
+        width: 100%;
+    }
+    .messageAvatar{
+        display: flex;
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        margin: 10px 10px;
+        border-radius: 50%;
+        background-color: rgb(136, 135, 135);
+        color: whitesmoke;
+        object-fit: cover;
+        align-items: center;
+        justify-content: center;
+            }
+ 
+    .SendMsgContainer{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 12%;
+    }
+ 
+    .SendMsgContainer form{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 80px;
+        grid-template-rows: repeat(1, 1fr);
+        
+    }
+  
+    .SendMsgContainer input{
+        width: calc(100% - 40px);
+        border-radius: 30px;
+        padding: 15px;
+        border: none;
+        background-color: rgb(226, 226, 226);
+        outline: none;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin: 10px 10px;
+    }
+   
+  
+    .MsgSendButton{
+        border: none;
+        color: #3d67b2;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+    }
+    .Icon{
+        font-size: 2rem;
+    }
+
+    .onlineStatus{
+        /* display: inline-block; */
+        position: relative;
+        top: 5px;
+        left: 5px;
+        height: 10px;
+        width: 10px;
+        border-radius: 5px;
+        background-color: rgb(43, 172, 43);
+        box-shadow: 0 0 10px 0 rgb(62, 216, 62);
+    }
+    .onlineStatus.off{
+        background-color: rgb(173, 173, 173);
+        box-shadow: 0 0 0 0;
+    }
+
+@media screen and (min-width: 800px){
+    .ChatPageContainerMain{
+        max-width: 1280px;
+        background-color: whitesmoke;
+        box-shadow: 0 5px 5px grey;
+        margin: 0 auto;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100vw;
+    }  
+    .ChatPageHeader{
+        padding: 10px 50px;
+        box-shadow: 2px 0 3px grey, -3px 0px 3px grey ;
+        z-index: 1;
+    }
+  
+    /* Users section */
+    .ChatContainerSection{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: flex-start;
+        width: 100%;
+        height: calc(100% - 70px);
+    }
+    .UsersContainerSection{
+        width: 30%;
+        height: 15%;
+        border-bottom: none;
+        border-right: 1px solid lightgrey;
+        padding: 0 10px ;
+        height: calc(100% - 20px);
+        overflow-x: hidden;
+        
+    }
+    .UsersContainer{
+        display: initial;
+        text-align: left;
+        border-right: 1px solid lightgrey;
+        overflow-y: scroll;
+        width: 100%;
+        height: calc(100% - 20px);
+        border-bottom: none;
+        overflow-x: hidden;
+    }
+    .UserInfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .UserDisplayAvatar{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 50%;
+        background-color: rgb(136, 135, 135);
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+    }
+    .UserDisplayName{
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        margin: 0, 10px;
+    font-size: initial;
+
+    }
+    .ChatContainer{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    .ChatHeader{
+        background-color: lightgrey;
+        padding: 0 50px;
+        font-weight: 500;
+        height: fit-content;
+        /* margin-top: 50px; */
+    }
+    .ChatHeader p{
+      padding: 5px 0;
+      margin: 0;
+   }
+    .ChatMessagesSection{
+        display: flex;
+        flex-direction: column;
+        height: 100% ;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .ChatMessagesAll{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .ChatMessagesAll .fix {
+        flex: 1 1 auto;
+      }
+    /* .ChatMessagesAll>*{
+        margin-top: auto;
+    } */
+    
+    .SendMsgContainer{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        height: fit-content;
+    }
+    .SendMsgContainer form{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 80px;
+        grid-template-rows: repeat(1, 1fr);
+    }
+  
+    .SendMsgContainer input{
+        width: calc(100% - 40px);
+        border-radius: 30px;
+        /* padding: 15px; */
+        border: none;
+        background-color: rgb(226, 226, 226);
+        outline: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 10px 10px;
+    }
+    .MsgSendButton{
+        border: none;
+        color: #3d67b2;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+    }
+    .Icon{
+        font-size: 2rem;
+    }
+    .onlineStatus{
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border-radius: 5px;
+        background-color: rgb(43, 172, 43);
+        box-shadow: 0 0 10px 0 rgb(62, 216, 62);
+        position: unset;
+    }
+    .onlineStatus.off{
+        background-color: rgb(173, 173, 173);
+        box-shadow: 0 0 0 0;
+    }
+}

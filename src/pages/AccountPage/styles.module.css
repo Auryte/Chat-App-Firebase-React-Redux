@@ -1,0 +1,272 @@
+.InputChangeContainer{
+    box-shadow:  0 5px 5px grey;
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Link{
+    padding: 0;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.Link:hover{
+    color: gray;
+}
+.IconArrow{
+    font-size: 1rem;
+}
+.UserData{
+text-align: left;
+}
+.UserData h4{
+    font-size: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-style: italic;
+    }
+    .UserData h4 span{
+        font-weight: 400;
+        color: #3d67b2;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 5px;
+        font-style: normal;
+        }
+.UserDataContainer{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+
+    }
+.UserDataContainer h1{
+   margin: 0 auto ;
+   font-size: 4rem;
+   font-weight: 800;
+   color: rgb(36, 36, 36);
+    }
+
+.Input{
+    width: 60%;
+    padding: 5px;
+    margin: 15px auto 0 auto;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px rgb(63, 63, 63);
+    font-size: 1.2rem;
+    outline: none;
+     }
+
+      
+.Button{
+    padding: 12px 60px;
+    margin: 30px auto 20px auto;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px rgb(36, 36, 36);
+    background-color: #3d67b2;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+
+}
+.UserAvatarEdit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.UserChangeImage{
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border-radius: 50%;
+}
+.UserDisplayAvatar{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: rgb(136, 135, 135);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UserDisplayImage{
+    width: 100px;
+    height: 100px;
+    margin: 10px ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    object-fit: cover;
+}
+.IconButton{
+    border: none;
+    color: #3d67b2;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.CustomFileUpload{
+    border: none;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+input[type="file"] {
+    display: none;
+}
+.UserEditIcon{
+    color: #3d67b2;
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-align: right;
+}
+.UserEditIcon:hover{
+    color: gray;
+    
+}
+.ImageSubmitForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: row-reverse; */
+    width: 150px;
+    height: 50px;
+   margin-left: 100px;
+}
+.ImageUploadButton{
+    /* position: relative;
+    top: 0;
+    left: 0; */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 3px 5px rgb(138, 137, 137);
+    background-color: white;
+    color: grey;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+.None{
+    display: none;
+}
+@media screen and (min-width: 500px ){
+  
+    .UserDataContainer{
+        margin: 0 auto;
+        width: 500px;
+        height: 100vh;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+       width: 100%;
+    }
+    
+    .Form{
+        display: flex;
+        flex-direction: column;
+       width: 100%;
+    }
+    .Input{
+        margin: 20px auto 0 auto;
+        padding: 15px;
+       }
+    .UserDataContainer h1{
+        margin: 0 auto 25px;
+    }
+    .UserData h4{
+        font-size: 1.3rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+    .UserChangeImage{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (min-width: 800px ){
+  
+    .InputChangeContainer{
+        border-radius: 10px;
+        /* height: 100%; */
+        height: 850px;
+    }
+   
+    .UserDataContainer{
+        margin: 50px auto;
+        width: 500px;
+        height: fit-content;
+        border-radius: 10px;
+      
+    }
+   
+    .Form{
+        display: flex;
+        flex-direction: column;
+       width: 100%;
+    }
+    
+      .Input{
+        margin: 20px auto 0 auto;
+        padding: 10px;
+        width: 60%;
+        font-size: 1.2rem;
+        outline: none;
+      }
+    .UserDataContainer h1{
+        margin: 0 auto 25px;
+    }
+    .UserData h4{
+        font-size: 1.3rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        }
+    .UserChangeImage{
+        width: 150px;
+        height: 150px;
+    }
+    .UserDisplayAvatar{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border-radius: 50%;
+        background-color: rgb(136, 135, 135);
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .UserDisplayAvatar p{
+        font-size: 1.5rem;
+    }
+    .UserDisplayImage{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .ErrorContainer{
+        font-size: 1rem;
+        margin: 0.3rem auto 0;
+        font-weight: 700;
+        width: 65%;
+    }
+}
